@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(29, 26, 26);
+
+}
+.main-head{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,7,22,1) 32%, rgba(195,52,255,1) 100%);
+    color:antiquewhite;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 46px;
+}
+.header-details{
+    display: flex-column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.divider{
+    background-color: bisque;
+    height: 10px;
+}
+
+.main-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section{
+    color:antiquewhite;
+    font-family: 'Quicksand', sans-serif;
+    display: flex-cols;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.task-container{
+    margin-top: 10px;
+    background-color: chocolate;
+    height: 100px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.task-details{
+    display: flex-cols;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.edit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(227, 227, 189);
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.edit-button:hover{
+    background-color: rgb(184, 184, 144);
+}
+
+.delete-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-button:hover{
+    background-color: rgb(150, 12, 12);
+}
+
+.is-complete{
+    background-color: rgba(0, 177, 41, 0.728);
+}
+
+.is-complete .task-details{
+    text-decoration: line-through;
+}
+.add-popup{
+    height: 50px;
+    width: 820px;
+    background-color: blanchedalmond;
+    color: black;
+    border-radius: 30px;
+    font-size: 30px;
+    font-family: 'Ubuntu Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.add-popup:hover{
+    background-color: rgb(195, 177, 149);
+}
+
+.popup{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:400px;
+    max-width: 400px;
+    background-color: bisque;
+    height: 330px;
+    border-radius: 30px;
+    padding: 32px;
+    box-shadow: 0px 2px 24px black;
+    color: black;
+}
+
+.close-popup{
+    position:absolute;
+    top:16px;
+    right:16px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color:black;
+    cursor:pointer;
+}
+
+.add-content{
+    display: flex-column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-container{
+    display: flex-col;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.input-field{
+    appearance: none;
+    border: none;
+    outline:none;
+    background-color: aliceblue;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 2px 24px rgba(0,0,0,0.2);
+    width: 100%;
+    font-size: 20px;
+}
+
+.create-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    height: 50px;
+    width: 415px;
+    border-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.create-button:hover{
+    background-color: rgb(212, 212, 172);
+}
+
+.Info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 800px;
+    margin: 10px 0px;
+}
+.btn-success{
+    width: 15px;
+    height: 15px;
+    background-color: greenyellow;
+    margin-left: 5px;
+    border-radius: 16px;
+}
+
+.btn-pending{
+    width: 15px;
+    height: 15px;
+    background-color: chocolate;
+    margin-left: 5px;
+    border-radius: 16px;
+}

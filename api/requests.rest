@@ -1,0 +1,16 @@
+GET http://localhost:3000/tasks
+
+###
+POST http://localhost:3000/task/create
+Content-Type: application/json
+
+{
+    "title":"Order Something",
+    "description":"order pizza at 7 am"
+}
+
+###
+DELETE http://localhost:3000/task/delete/64caaec3ab50654586e89894
+
+###
+GET http://localhost:3000/task/completed/64ca930fcb64d18c014e1bc5
